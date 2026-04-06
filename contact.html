@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff4da6, #ff99cc);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background: rgba(0,0,0,0.5) !important;
+      backdrop-filter: blur(10px);
+    }
+
+    .form-box {
+      background: rgba(255,255,255,0.2);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(12px);
+      transition: 0.3s;
+    }
+
+    .form-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .form-control {
+      background: rgba(255,255,255,0.2);
+      border: none;
+      color: white;
+    }
+
+    .form-control::placeholder {
+      color: #eee;
+    }
+
+    .btn-custom {
+      background: #ff1a8c;
+      border: none;
+      color: white;
+    }
+
+    .btn-custom:hover {
+      background: #ff66b3;
+    }
+  </style>
+
+  <title>Contact</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">PinkBlog</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="form-box">
+    <h1 class="fw-bold mb-4 text-center">Contact Me 💌</h1>
+
+    <form>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Your Name">
+      </div>
+
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Your Email">
+      </div>
+
+      <div class="mb-3">
+        <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+      </div>
+
+      <button class="btn btn-custom w-100">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<footer class="text-center mt-5 p-4">
+  <p>© 2026 PinkBlog</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
